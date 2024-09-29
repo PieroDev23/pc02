@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 WORKDIR /app
 
 # Copiar el archivo .csproj y restaurar las dependencias
-COPY *.csproj ./
+COPY .csproj ./
 RUN dotnet restore
 
 # Copiar todo el resto de los archivos y construir la aplicación
