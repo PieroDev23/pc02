@@ -12,6 +12,6 @@ WORKDIR /app
 COPY --from=build-env /app/out .
 
 
-ENV APP_NET_CORE pc_02.dll 
+ENV APP_NET_CORE pc-02.dll 
 
 CMD ASPNETCORE_URLS=http://:$PORT dotnet $APP_NET_CORE
