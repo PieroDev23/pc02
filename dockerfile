@@ -23,7 +23,7 @@ COPY --from=build-env /app/out .
 
 # Definimos una variable de entorno donde almacenaremos el nombre del archivo ejecutable (.dll)
 # Esto permite flexibilidad para cambiar el nombre del archivo sin modificar el Dockerfile
-ENV APP_NET_CORE pc_02.dll  
+ENV APP_NET_CORE pc_02.dll  # CAMBIAR ESTE NOMBRE SEGÚN TU APLICACIÓN
 
 # Definimos el comando para ejecutar la aplicación
 # La variable de entorno ASPNETCORE_URLS define en qué puerto se ejecutará la app
