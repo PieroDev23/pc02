@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using pc_02.Data;
 using pc_02.Models;
 
@@ -38,6 +39,7 @@ public class HomeController : Controller
 
         return View("Index", account);
     }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
